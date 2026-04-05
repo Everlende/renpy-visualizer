@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ren'Py Branch Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #1e2937 0%, #334155 100%); }
+        .screenshot { box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4); }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+
+    <!-- Hero -->
+    <div class="hero-bg py-20">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-4">
+                Ren'Py Branch Visualizer
+            </h1>
+            <p class="text-2xl text-zinc-400 mb-8 max-w-2xl mx-auto">
+                Interactive flow graphs for your Ren'Py game — right inside VS Code.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#download" 
+                   class="inline-flex items-center px-8 py-4 bg-emerald-600 hover:bg-emerald-500 rounded-2xl text-lg font-semibold transition">
+                    <i class="fas fa-download mr-3"></i> Download .vsix
+                </a>
+                <a href="https://marketplace.visualstudio.com/items?itemName=YOUR_PUBLISHER_NAME.renpy-branch-visualizer" 
+                   class="inline-flex items-center px-8 py-4 bg-zinc-800 hover:bg-zinc-700 border border-zinc-600 rounded-2xl text-lg font-semibold transition">
+                    Install from VS Code Marketplace
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Demo -->
+    <div class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-semibold text-center mb-8">Watch it in action</h2>
+        <div class="aspect-video mx-auto max-w-4xl bg-black rounded-2xl overflow-hidden">
+            <iframe class="w-full h-full" 
+                    src="https://www.youtube.com/embed/jWoJSv4hyi4" 
+                    title="RenPy Visualizer Demo (VS Code extension)" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+        <p class="text-center text-zinc-400 mt-4 text-sm">
+            Demo by <a href="https://www.youtube.com/@LittleNihilistaGames" class="hover:text-white">Little Nihilista Games</a>
+        </p>
+    </div>
+
+    <!-- Screenshot -->
+    <div class="bg-zinc-900 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center mb-8">Clean, interactive graphs</h2>
+            <img src="Renpy_Visualizer_Screenshot1.jpg" 
+                 alt="Ren'Py Branch Visualizer Screenshot" 
+                 class="screenshot mx-auto rounded-3xl w-full max-w-4xl border border-zinc-700">
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="max-w-5xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-semibold text-center mb-12">Key Features</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-zinc-900 p-8 rounded-3xl">
+                <i class="fas fa-project-diagram text-4xl text-emerald-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Live Flow Graph</h3>
+                <p class="text-zinc-400">Visualize labels, menus, jumps, calls, returns, and screens with real-time updates.</p>
+            </div>
+            <div class="bg-zinc-900 p-8 rounded-3xl">
+                <i class="fas fa-mouse-pointer text-4xl text-emerald-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">One-click Navigation</h3>
+                <p class="text-zinc-400">Click any node to jump directly to the code. Two-way sync between graph and editor.</p>
+            </div>
+            <div class="bg-zinc-900 p-8 rounded-3xl">
+                <i class="fas fa-layer-group text-4xl text-emerald-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Multi-file + Cluster Mode</h3>
+                <p class="text-zinc-400">Work across many .rpy files with automatic file grouping.</p>
+            </div>
+            <div class="bg-zinc-900 p-8 rounded-3xl">
+                <i class="fas fa-palette text-4xl text-emerald-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Persistent Metadata</h3>
+                <p class="text-zinc-400">Add colors, notes, completion checks, and flags — saved automatically.</p>
+            </div>
+            <div class="bg-zinc-900 p-8 rounded-3xl">
+                <i class="fas fa-save text-4xl text-emerald-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Custom Layouts</h3>
+                <p class="text-zinc-400">Save your preferred view, switch between flow, grid, and custom positions.</p>
+            </div>
+            <div class="bg-zinc-900 p-8 rounded-3xl">
+                <i class="fas fa-bolt text-4xl text-emerald-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Unused Path Detection</h3>
+                <p class="text-zinc-400">Quickly spot dead ends and return edges.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Download & Support -->
+    <div id="download" class="bg-zinc-900 py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to try it?</h2>
+            <p class="text-xl text-zinc-400 mb-10">Install from the VS Code Marketplace (recommended) or download the .vsix directly.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <!-- Marketplace button -->
+                <a href="https://marketplace.visualstudio.com/items?itemName=YOUR_PUBLISHER_NAME.renpy-branch-visualizer" 
+                   class="flex-1 max-w-xs bg-blue-600 hover:bg-blue-500 text-white px-10 py-5 rounded-2xl text-lg font-medium flex items-center justify-center gap-3 transition">
+                    <i class="fas fa-store"></i>
+                    Install from Marketplace
+                </a>
+                
+                <!-- Direct download (update the link once you create a release) -->
+                <a href="https://github.com/yourusername/renpy-visualizer/releases/latest/download/renpy-branch-visualizer.vsix" 
+                   class="flex-1 max-w-xs bg-zinc-800 hover:bg-zinc-700 border border-zinc-600 px-10 py-5 rounded-2xl text-lg font-medium flex items-center justify-center gap-3 transition">
+                    <i class="fas fa-download"></i>
+                    Download .vsix
+                </a>
+            </div>
+
+            <!-- Ko-fi placeholder -->
+            <div class="mt-16">
+                <p class="text-zinc-400 mb-4">If this tool helps you build better stories, consider supporting development:</p>
+                <a href="https://ko-fi.com/yourusername" 
+                   target="_blank"
+                   class="inline-flex items-center gap-3 bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-2xl text-xl font-medium transition">
+                    <i class="fas fa-coffee"></i>
+                    Buy me a coffee on Ko-fi
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black py-10 text-center text-zinc-500 text-sm">
+        <p>Ren'Py Branch Visualizer © 2024-2026 Your Name</p>
+        <p class="mt-2">
+            Licensed under <a href="LICENSE" class="hover:text-white">MIT License</a> • 
+            Independent VS Code extension for Ren'Py
+        </p>
+    </footer>
+
+</body>
+</html>
